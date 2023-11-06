@@ -1,11 +1,11 @@
-import os
-from pylib import ask_gpt3
-from pylib import ocr_image
+
+from pylib.ask_gpt3 import ask_gpt3
+
+def main():
+    input_message = "What is the weather like today?"
+    assistant_reply, tokens_used = ask_gpt3(input_message)
+    print("GPT-3.5 Assistant Reply:", assistant_reply)
+    print("Tokens used for the reply:", tokens_used)
 
 if __name__ == "__main__":
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-
-    source_directory = os.path.join(base_dir, "Corpus", "Notice-of-Sale-21CV47908", "Source")
-    output_directory = os.path.join(base_dir, "Corpus", "Notice-of-Sale-21CV47908", "Text")
-    
-    ocr_image.process_files_for_ocr(source_directory, output_directory)
+    main()

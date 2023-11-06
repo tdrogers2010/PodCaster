@@ -21,6 +21,17 @@ headers = {
 }
 
 def ask_gpt3(input_message):
+    """
+    Sends a message to the OpenAI GPT-3.5 chat model and retrieves the response.
+
+    Args:
+        input_message (str): The message to send to the GPT-3.5 model.
+
+    Returns:
+        tuple:
+            - assistant_reply (str): The model's response to the input message.
+            - tokens_used (int): The number of tokens used in the API response.
+    """
     messages = [
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": input_message}
