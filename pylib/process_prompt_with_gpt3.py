@@ -51,7 +51,7 @@ def create_and_save_podcast(prompt, base_directory, segment_name, corpus_name="C
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": prompt},
         {"role": "assistant", "content": assistant_reply1},
-        {"role": "user", "content": "Create a table with Columns ResourceName, Resource, ResourceDesc"}
+        {"role": "user", "content": "Create a table with Columns SupportingMaterialName, SupportingMaterialText"}
     ]
     assistant_reply2, tokens_used2 = ask_gpt3(messages_to_send2)
     output_path2 = os.path.join(base_directory, corpus_name, segment_name, "ResourcesToGenerateTable.txt")
