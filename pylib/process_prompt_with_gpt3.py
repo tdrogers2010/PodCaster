@@ -43,7 +43,7 @@ def create_and_save_podcast(prompt, base_directory, segment_name, corpus_name="C
         {"role": "user", "content": ResourcesNeeded}
     ]
     assistant_reply1, tokens_used1 = ask_gpt3(messages_to_send1)
-    output_path1 = os.path.join(base_directory, corpus_name, segment_name, "ResourcesToGenerate.txt")
+    output_path1 = os.path.join(base_directory, corpus_name, segment_name, "SupportingMaterialRequest.txt")
     save_content_to_file(assistant_reply1, output_path1)
 
     # Create a table with the resources needed (Second GPT-3 Interaction)
@@ -51,10 +51,15 @@ def create_and_save_podcast(prompt, base_directory, segment_name, corpus_name="C
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": prompt},
         {"role": "assistant", "content": assistant_reply1},
-        {"role": "user", "content": "Create a table with Columns SupportingMaterialName, SupportingMaterialText"}
+        {"role": "user", "content": """Convert this list into a Table with Column SupportingMaterial then add a column called SupportingMaterialFileName.
+Next write
+---
+table into a csv table
+---
+"""}
     ]
     assistant_reply2, tokens_used2 = ask_gpt3(messages_to_send2)
-    output_path2 = os.path.join(base_directory, corpus_name, segment_name, "ResourcesToGenerateTable.txt")
+    output_path2 = os.path.join(base_directory, corpus_name, segment_name, "SupportingMaterialTable.txt")
     save_content_to_file(assistant_reply2, output_path2)
 
 if __name__ == "__main__":

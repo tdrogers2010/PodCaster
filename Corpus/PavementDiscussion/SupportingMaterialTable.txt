@@ -1,0 +1,14 @@
+SupportingMaterial | SupportingMaterialFileName
+---------------------------------------------
+Expert Opinions and Research Papers | research_papers.pdf
+Case Studies and Real-life Examples | case_studies.docx
+User Questions and Testimonials | user_feedback.xlsx
+
+Next, to convert the table into a CSV format, you can use the following format:
+
+SupportingMaterial,SupportingMaterialFileName
+Expert Opinions and Research Papers,research_papers.pdf
+Case Studies and Real-life Examples,case_studies.docx
+User Questions and Testimonials,user_feedback.xlsx
+
+Now, let's proceed to the next step.

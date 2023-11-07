@@ -1,9 +1,0 @@
-Certainly! Here's an example table with the requested columns:
-
-| SupportingMaterialName     | SupportingMaterialText                                                                                                         |
-|-----------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Comparative statistics and research          | Comparative statistics and research will provide data on the pros and cons of both concrete and asphalt pavements. This data will include factors such as durability, lifespan, maintenance requirements, cost-effectiveness, environmental impact, and overall performance. This information will be used to present a balanced and informative discussion between Trump and Rogan. |
-| Expert testimonials and case studies        | Expert testimonials and case studies will feature insights from professionals in civil engineering or infrastructure development who have experience with both concrete and asphalt pavement. These testimonials and case studies will highlight real-world examples showcasing the effectiveness and challenges of each pavement type. This will add credibility to the conversation and provide valuable insights. |
-| Listener questions and opinions                      | Listener questions and opinions will be collected from the audience and integrated into the podcast. This will allow Trump and Rogan to address specific points of interest directly from the listeners. These questions and opinions can be sourced through social media interactions, emails, or online surveys to engage the audience and make the podcast more interactive.  |
-
-Feel free to adjust the table as per your specific requirements.
