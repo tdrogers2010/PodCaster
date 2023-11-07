@@ -1,0 +1,11 @@
+Certainly! Here's an example table with the columns "ResourceName," "Resource," and "ResourceDesc":
+
+| ResourceName | Resource | ResourceDesc |
+|--------------|----------|--------------|
+| Concrete     | Link     | Information about the benefits and drawbacks of concrete pavement. |
+| Asphalt      | Link     | Information about the benefits and drawbacks of asphalt pavement. |
+| Civil Engineers | Quote/Testimonial | Expert opinions on the performance and durability of concrete and asphalt pavement. |
+| Case Studies | Link | Real-life examples showcasing the successes and challenges of concrete and asphalt projects. |
+| Environmental Impact | Quote/Testimonial | Perspectives on the ecological footprint and sustainability of concrete and asphalt pavement. |
+
+Feel free to add or modify rows as needed. This table can serve as a helpful reference while scripting the podcast, allowing you to easily incorporate relevant resources and supporting materials into the conversation between Donald Trump and Joe Rogan.
