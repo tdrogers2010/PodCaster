@@ -20,23 +20,18 @@ headers = {
     "Content-Type": "application/json"
 }
 
-def ask_gpt3(input_message):
+def ask_gpt3(messages):
     """
-    Sends a message to the OpenAI GPT-3.5 chat model and retrieves the response.
+    Sends a list of messages to the OpenAI GPT-3.5 chat model and retrieves the response.
 
     Args:
-        input_message (str): The message to send to the GPT-3.5 model.
+        messages (list): The list of messages including system and user messages to send to the GPT-3.5 model.
 
     Returns:
         tuple:
             - assistant_reply (str): The model's response to the input message.
             - tokens_used (int): The number of tokens used in the API response.
     """
-    messages = [
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": input_message}
-    ]
-
     data = {
         "model": "gpt-3.5-turbo",
         "messages": messages
@@ -62,6 +57,11 @@ def ask_gpt3(input_message):
 
 # Test the function
 if __name__ == "__main__":
+    system_message = "You are a helpful assistant."
     user_message = "List 5 most interesting questions to ask."
-    reply, tokens = ask_gpt3(user_message)
+    messages_to_send = [
+        {"role": "system", "content": system_message},
+        {"role": "user", "content": user_message}
+    ]
+    reply, tokens = ask_gpt3(messages_to_send)
     print(f"Reply: {reply}\nTokens used: {tokens}")
